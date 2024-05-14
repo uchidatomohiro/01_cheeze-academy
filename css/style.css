@@ -1,0 +1,626 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+/* タイトル */
+.title_box{
+	background: url(../img/titlebg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 1600px;
+	width: 100%;
+	height: 100%;
+	color: whitesmoke;	
+}
+.title_box_cheeze{height: 200px;}
+.title_box_title{font-size: 48px;}
+.space_40{height: 40px;}
+.title_box_name{font-size: 36px;}
+.title_box_space{height: 200px;}
+.title_box_1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/* メニュー */
+.menu_box{
+	justify-content: space-evenly;
+	width: 100%;
+	border: 0.2px solid;
+	height: 100px;
+	width: 100%;
+    background: #efefef;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu_img{
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	width: auto;
+	height: 100%;
+}
+.menu_sab{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #222222;
+	font-size: 21px;
+}
+img.example{
+	width: 300px;
+	height: 60px;
+}
+.menu_sab{
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	width: auto;
+	height: 100%;
+}
+
+
+/* アバウト */
+.about_box{
+	display: block;
+	margin: auto;
+	padding: 21px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	padding-top: 80px;
+}
+
+.about_box{
+	background-image: url(../img/aurorabg.jpg);
+	background-repeat:  no-repeat;  
+    background-position:center center;                    
+	background-size:cover;                                 
+	width:100%;                                            
+    height:100%
+}
+.about_title_space{height: 60px;}
+
+h2{font-size: 24px;
+	color: #ffd61a;
+}
+.about_subtitle_space1{height: 24px;}
+.about_subtitle{color: #ffffff;}
+.about_subtitle_space2{height: 64px;}
+.about_box_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.about_a0{margin-top: 24px;}
+
+
+
+.about_a1{margin-top: 64px;}
+.about_b1{margin-top: 40px;}
+.about_a2{margin-top: 40px;}
+.about_a4{margin-top: 40px;}
+.about_a5{margin-top: 40px;}
+.about_a7{margin-top: 80px;}
+
+.about__line{
+	animation-name: fadeInAnime;/*1で解説*/
+	animation-fill-mode:forwards;/*2で解説*/
+	animation-duration:3s;/*3で解説*/
+	animation-timing-function:ease;/*5で解説*/
+	animation-delay: 0.5s;/*6で解説*/
+	animation-direction:normal;/*7で解説*/
+	height: 24px;
+	color: #ffffff;
+}
+/* スライド */
+@keyframes infinity-scroll-left {
+	from {
+	  transform: translateX(0);
+	}
+	  to {
+	  transform: translateX(-100%);
+	}
+	}
+	.scroll-infinity__wrap {
+	  display: flex;
+	  overflow: hidden;
+	}
+	.scroll-infinity__list {
+	  display: flex;
+	  list-style: none;
+	  padding: 0
+	}
+	.scroll-infinity__list--left {
+	  animation: infinity-scroll-left 20s infinite linear 0.5s both;
+	}
+	.scroll-infinity__item {
+	  width: calc(100vw / 4);
+	}
+	.scroll-infinity__item>img {
+	  width: 100%;
+	}
+.scroll_space{height: 40px;}
+
+/* コース */
+.course_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #ffffff;
+	background-image: url(../img/snow2bg.gif);
+	background-repeat:  no-repeat;  
+    background-position:center center;                    
+	background-size:cover;                                 
+	width:100%;                                            
+    height:100%
+}
+.course_00{padding: 64px;}
+.course_01{font-size: 24px;color: #ffffff;}
+.course_02{margin-top: 24px;}
+.course_04{padding: 64px;}
+
+/* ガイド */
+.guide_main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	text-align: left;
+	background-image: url(../img/aurorabg.jpg);  
+    background-position:center center;                    
+	background-size:cover;                                 
+	width:100%;                                            
+    height:100%
+	
+}
+.square{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-grow: 1;
+}
+
+.square_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #ffffff;
+}
+
+.guide_text{width: 400px;}
+.guide_title{
+	font-size: 24px;
+	color: #ffffff;
+	
+}
+.square_image{width: 50%;margin: 0 -6.5% 0;}
+.guide_space{padding: 40px;}
+.guide_space1{padding: 20px;}
+.guide_space2{padding: 32px;}
+
+/*  ニュース  */
+.news_box{ 
+	background-image: url(../img/snow2bg.gif);
+	background-repeat:  no-repeat;  
+    background-position:center center;                    
+	background-size:cover;                                 
+	width:100%;                                            
+    height:100%;
+}
+.news_space{height: 40px;}
+.news_box_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #ffffff; 
+	font-size: 24px;
+}
+.news__main1{margin-top:64px; font-size: 24px; color: #ffb61a;
+	height: 40px;
+}
+.news__main2{margin-top: 64px;}
+.news_list{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: #edcdcd
+}
+.news_box_news1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.news_box_news1_image{width: 280px;}
+.news_box_news1_title{text-align: left;margin-top: 32px;}
+.news_box_space{height: 12px;}
+.news_box_news1_text{text-align: left;margin-top: 24px;width: 280px;}
+
+
+.button_box_button{
+	border-radius: 6px;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	display: block;
+	letter-spacing: 0.05em;
+	background: #5bc8ac;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+.button_space{height: 56px;}
+
+
+
+/*  連絡先  */
+.access_box{
+	background-image: url(../img/aurorabg.jpg);
+	background-repeat:  no-repeat;  
+    background-position:center center;                    
+	background-size:cover;                                 
+	width:100%;                                            
+    height:100%;
+}
+.access_box_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #ffffff;
+}
+.access_h2{
+	margin-top: 64px;
+	font-size: 24px;
+	color: #ffffff;
+	height: 60px;
+}
+.access_h3{margin-top: 24px;}
+.access_h4{margin-top: 64px;}
+
+/*  マップ  */
+.map{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding: 56.25%;
+}
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.map-wrap {
+	max-width: 100%
+}
+.map-resize{
+	width: px;
+	height: 150px;}
+.map_space{height: 300px;}	
+
+.access-table{padding-top:45px;padding-left:30%; color: #ffffff;}
+.access-dt{float:left;padding:10px;}
+.access-dd{margin-left:150px;padding:10px;text-align: left;}
+.access_end_space{height: 56px;}
+
+/*  contact  */
+.contact_box{
+	background-image: url(../img/snowcontactbg.jpeg);
+	background-repeat:  no-repeat;  
+    background-position:center center;                    
+	background-size:cover;                                 
+	width:100%;                                            
+    height:100%;
+}
+
+.contact_box_title_space{height: 80px;}
+.contact_box_title{font-size: 24px;color: #000000;}
+.contact{padding-top:45px;padding-left:30%;}
+.contact-dt{float:left;padding:10px;}
+.contact-dd{margin-left:150px;padding:10px;text-align: left;}
+.contact-type{border: 0.2px solid;}
+
+
+/* フォーム */
+.Form {
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column
+
+  }
+  @media screen and (max-width: 480px) {
+	.Form {
+	  margin-top: 40px;
+	}
+  }
+  .Form-Item {
+	border-top: 1px solid #000000;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Item {
+	  padding-left: 14px;
+	  padding-right: 14px;
+	  padding-top: 16px;
+	  padding-bottom: 16px;
+	  flex-wrap: wrap;
+	}
+
+	.Form-Item {
+		padding-left: 14px;
+		padding-right: 14px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		flex-wrap: wrap;
+	  }
+	}
+	.wrap{
+		display:flex;
+		flex-flow: column;
+		border:2px #ccc solid;
+		height:300px;
+		margin:0 0 1em;	
+	}
+
+
+  .Form-Item:nth-child(5) {
+	border-bottom: 1px solid #ddd;
+  }
+  .Form-Item-Label {
+	width: 100%;
+	max-width: 248px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	font-size: 18px;
+  }
+
+  @media screen and (max-width: 480px) {
+	.Form-Item-Label {
+	  max-width: inherit;
+	  display: flex;
+	  align-items: center;
+	  font-size: 15px;
+	}
+  }
+  .Form-Item-Label.isMsg {
+	margin-top: 8px;
+	margin-bottom: auto;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Item-Label.isMsg {
+	  margin-top: 0;
+	}
+  }
+  .Form-Item-Label-Required {
+	border-radius: 6px;
+	margin-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 48px;
+	display: inline-block;
+	text-align: center;
+	background: #5bc8ac;
+	color: #fff;
+	font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Item-Label-Required {
+	  border-radius: 4px;
+	  padding-top: 4px;
+	  padding-bottom: 4px;
+	  width: 32px;
+	  font-size: 10px;
+	}
+  }
+  .Form-Item-Input {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 48px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Item-Input {
+	  margin-left: 0;
+	  margin-top: 18px;
+	  height: 40px;
+	  flex: inherit;
+	  font-size: 15px;
+	}
+  }
+  .Form-Item-Textarea {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 216px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Item-Textarea {
+	  margin-top: 18px;
+	  margin-left: 0;
+	  height: 200px;
+	  flex: inherit;
+	  font-size: 15px;
+	}
+  }
+  .Form-Btn {
+	border-radius: 6px;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	display: block;
+	letter-spacing: 0.05em;
+	background: #5bc8ac;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Btn {
+	  margin-top: 24px;
+	  padding-top: 8px;
+	  padding-bottom: 8px;
+	  width: 160px;
+	  font-size: 16px;
+	}
+  }
+  
+
+/* ページトップボタン */ 
+html {
+    scroll-behavior: smooth;
+}
+
+#page_top{
+	width: 90px;
+	height: 60px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	opacity: 0.6;
+	border: 3px solid #ffb61a;
+	border-radius: 15px;
+  }
+  #page_top a{
+	position: relative;
+	display: block;
+	width: 90px;
+	height: 60px;
+	text-decoration: none;
+  }
+  #page_top a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f062';
+	font-size: 25px;
+	color: #ffb61a;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -25px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+  }
+  #page_top a::after{
+	content: 'PAGE TOP';
+	font-size: 13px;
+	color: #ffb61a;
+	position: absolute;
+	top: 38px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+  }
+
+.last_space{height: 40px;}
+
+
+/* フッター */
+footer {
+	background-color: gray;
+	color: whitesmoke;
+	height: 82px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+ 
+.copyright {
+	text-align: center;
+	font-size: 18px;
+	}
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
